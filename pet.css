@@ -4,13 +4,16 @@
     box-sizing: border-box;
 }
 .container-fluid{
-    /* border:1px solid red; */
+    border:1px solid red;
+
     /* border:none; */
 }
 .lefttop{
+    
     /* border:1px solid red; */
     
     border-right:2px solid rgb(160, 196, 107);
+
     
     /* padding-left:10px; */
 }
@@ -45,13 +48,15 @@
 }
 .image1{
     /* border: 1px solid red; */
-    height:82vh;
+    min-height:82vh;
     width: 100%;
     background-image: url('./img/hero.jpg');
     background-size:cover;
+    /* object-fit: cover; */
     background-repeat: no-repeat;
 /* background-attachment: fixed; */
 background-position: center;
+padding-bottom:2rem ;
 }
 .check1{
     /* border:1px solid red; */
@@ -117,15 +122,15 @@ button{
     /* border:1px solid red; */
     color:antiquewhite;
     background-color: green;
-    padding-left:40px;
-    padding-right: 10px;
+    /* padding-left:40px; */
+    /* padding-right: 10px; */
     margin-left:80px;
     margin-top:10px;
 }
 .button2{
     /* border:1px solid red; */
     color:green;
-    padding-left: 40px;
+    /* padding-left: 40px;   */
     margin-left:190px;
 }
 .box{
@@ -140,7 +145,7 @@ button{
 }
 .petonbaord{
     /* border:1px solid red; */
-    height: 15vh;
+   min-height: 15vh;
     background-color: rgb(221, 206, 206);
 }
 .color{
@@ -151,14 +156,14 @@ button{
 
 .second{
     margin-top:6rem;
-    height: 15vh;
+    min-height: 15vh;
     background-color: rgb(221, 206, 206);
 
 }
 .petgrooming{
     /* border:1px solid red; */
     margin-top:30px;
-    height: 15vh;
+    min-height: 15vh;
     background-color: rgb(235, 225, 225);
 
 
@@ -167,19 +172,19 @@ button{
 {
     /* border:1px solid red; */
     margin-top:35px;
-    height: 15.2vh;
+    min-height: 15.2vh;
     background-color: rgb(221, 206, 206);
 }
 .pr1{
     /* border:1px solid red; */
-    margin-top:20px;
+    margin-top:40px;
 }
 .line{
     border-left: 2px solid green;
 }
 .firstproduct{
     /* border: 1px solid red; */
-    padding-left:90px;
+    padding-left:40px;
     background-color: rgb(235, 225, 225);
 
 }
@@ -216,16 +221,20 @@ button{
     justify-content: flex-end;
     align-items: flex-end;
     
-    height: 75vh;
+    min-height: 75vh;
     background-image: url(img/testimonial.jpg);
+    object-fit: cover;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .box{
     /* border: 1px solid red; */
     background-color: #fff;
-    height: 25rem;
-    width: 40rem;
+    min-height: 20vh;
+    /* width: 40rem; */
+}
+.content{
+    height: 100%;
 }
 .card2 {
     height:18rem ;
@@ -268,9 +277,135 @@ button{
 
 }
 .PRICE{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-size: 1.5rem;
     /* margin-right:40px ; */
     color:#fff;
     background-color: rgb(32, 193, 32);
-};
+}
+
+
+
+
+@media (max-width:800px){
+    .text-center h1{
+       font-size: 15px;
+    }
+
+    /* .image1{
+        background-position: right;
+    } */
+    .lorem{
+
+        font-size: 20px;
+    }
+    .check3{
+        /* border:1px solid red; */
+    margin: 10px 0px 0px 90px;
+        
+    }
+    .offer{
+        /* border:1px solid red; */
+        margin-top: 1600px;
+        font-size: 12px;
+    }
+    .shop{
+        /* border: 1px solid red; */
+        margin:10px;
+        font-size: 20px;
+
+    }
+    .background{
+        /* border: 1px solid red; */
+        margin: 10px;
+        font-size: 20px;
+    }
+    .offer span{
+        border: 1px solid red;
+        /* margin-top:400px; */
+    }
+    
+}
+@media (max-width:300px){
+    .check1{
+        /* border:1px solid rgb(0, 255, 26); */
+        font-size:68px;
+    }
+    .check3{
+        /* border:1px solid orange; */
+        margin: 10px 0px 0px 90px;
+        font-size:26px;
+
+    }
+    
+    
+}
+@media (max-width:770px){
+    .firstproduct{
+        /* border: 1px solid red; */
+        padding-left:155px;
+        background-color: rgb(235, 225, 225);
+        
+    }
+    .product{
+        /* border:1px solid red; */
+        /* gap:24px; */
+    }
+    .pr1{
+        /* border:1px solid red; */
+        gap:24px;
+    }
+    .serv{
+        border: 1px solid red;
+        gap:45px;
+    }
+    .offer{
+        /* border:1px solid red; */
+        margin-top: 2300px;
+        font-size: 9px;
+    }
+    .offer h1{
+        font-size: 18px;
+    }
+    .shop{
+        font-size: 15px;
+
+    }
+    .background{
+        font-size: 15px;
+
+    }
+    .staw{
+        gap: 15px
+
+    }
+    .dolor{
+        border: 1px solid red;
+        /* margin-top: 20px;
+         */
+        font-size: 15px;
+    }
+    .button2{
+        /* border:1px solid red; */
+        color:green;
+        /* padding-left: 40px;   */
+        margin-left:130px;
+    }
+    
+    
+}
+@media (max-width:1246px){
+    .box{
+        /* font-size:10px; */
+    }
+    .lasttext{
+        /* border:1px solid red; */
+        
+        /* font-size: 10px; */
+    }
+    .button1{
+        /* border: 1px solid red; */
+        margin-left: 40px;
+        /* margin-bottom: 10px; */
+    }
+}
